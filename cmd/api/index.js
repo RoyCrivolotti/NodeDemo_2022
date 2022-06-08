@@ -18,7 +18,7 @@ app.listen();
 registerMiddlewares(app);
 
 // Route handling
-app.all("/", (_, res) => res.redirect("/api"));
+app.all('/', (_, res) => res.redirect('/api'));
 app.use('/api', router);
 
 app.use('/*', (req, res, next) => {

@@ -1,7 +1,7 @@
-import helmet from "helmet";
-import cors from "cors";
-import express from "express";
-import auth from "express-basic-auth";
+import helmet from 'helmet';
+import cors from 'cors';
+import express from 'express';
+import auth from 'express-basic-auth';
 import morgan from 'morgan';
 
 export default server => {

@@ -3,7 +3,10 @@
 		"browser": true,
 		"es6": true
 	},
-	"plugins": [],
+	"plugins": [
+		"eslint-plugin-no-null",
+		"eslint-plugin-unicorn"
+	],
 	"extends": [
 		"eslint:recommended",
 		"airbnb"
@@ -44,6 +47,10 @@
 		"eqeqeq": [
 			"error",
 			"always"
+		],
+		"indent": [
+			"error",
+			4
 		],
 		"guard-for-in": "error",
 		"id-blacklist": [
@@ -139,6 +146,7 @@
 		"no-unsafe-finally": "error",
 		"no-unused-labels": "error",
 		"no-useless-constructor": "off",
+		"no-use-before-define": "off",
 		"no-var": "error",
 		"object-shorthand": "error",
 		"one-var": [
@@ -184,8 +192,7 @@
 			"error",
 			{
 				"cases": {
-					"camelCase": true,
-					"pascalCase": true
+					"snakeCase": true
 				},
 				"ignore": []
 			}
